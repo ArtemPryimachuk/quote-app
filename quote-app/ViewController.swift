@@ -43,8 +43,10 @@ class ViewController: UIViewController {
                                  "The only way to achieve the impossible is to believe it is possible."
     ]
     
-    var usedPhrasesList: [String] = []
     let phrasesListKey = "usedPhrasesListKey"
+    let userDefaultsKey = "lastOpenedTime"
+    let lastShowTimeKey = "lastShowTimeKey"
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +56,8 @@ class ViewController: UIViewController {
     
     
     func generatePhrase() -> String? { // фраза рандом + масив
+        var usedPhrasesList: [String] = []
+
         guard phrasesList.count > 0 else{
             return nil
         }
@@ -71,27 +75,32 @@ class ViewController: UIViewController {
         return phraseOfDay
     }
     
-    let userDefaultsKey = "lastOpenedTime"
     
-    func checkTime() -> Bool {
-        let currentDate = Date()
-        
-        let lastShowTime = UserDefaults.standard.value(forKey: "lastShowTime") as? Date
-        
-        guard let lastTime = lastShowTime else {
-            UserDefaults.standard.set(currentDate, forKey: "lastShowTime")
-            return true
+        func isTimeChanged() -> Bool {
+            let currentDate = Date()
+            
+            let lastShowTime = UserDefaults.standard.value(forKey: lastShowTimeKey) as? Date
+            
+            guard let lastTime = lastShowTime else {
+                UserDefaults.standard.set(currentDate, forKey: lastShowTimeKey)
+                return true
+            }
+            let lastTimeToCompare = lastTime.zeroSeconds
+            let currentTimeToCompare = currentDate.zeroSeconds
+                
+            if lastTimeToCompare != currentTimeToCompare {
+                return true
+            }else {
+                return false
+            }
         }
-        
-        let calendar = Calendar.current
-        let minutesElapsed = calendar.dateComponents([.minute], from: lastTime, to: currentDate).minute ?? 0
-        return minutesElapsed >= 1
-    }
+
+
     
     
     func saveLastShowTime() {
         let currentDate = Date()
-        UserDefaults.standard.set(currentDate, forKey: "lastShowTime")
+        UserDefaults.standard.set(currentDate, forKey: lastShowTimeKey)
     }
     
     func getLastQuote() -> String? {
@@ -101,11 +110,11 @@ class ViewController: UIViewController {
     }
     
     func setPhrase() {
-        if checkTime() {
+        if isTimeChanged() == true {
             let newQuote = generatePhrase()
             saveLastShowTime()
             quoteLabel.text = newQuote
-        } else {
+        }else {
             let lastQuote = getLastQuote()
             quoteLabel.text = lastQuote
         }
