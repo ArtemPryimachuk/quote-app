@@ -44,16 +44,13 @@ class ViewController: UIViewController {
     ]
     
     let phrasesListKey = "usedPhrasesListKey"
-    let userDefaultsKey = "lastOpenedTime"
-    let lastShowTimeKey = "lastShowTimeKey"
-    
+    let quoteCreatedAt = "quoteCreatedAtKey"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setPhrase()
     }
-    
     
     func generatePhrase() -> String? { // фраза рандом + масив
         var usedPhrasesList: [String] = []
@@ -78,11 +75,7 @@ class ViewController: UIViewController {
     
         func isTimeChanged() -> Bool {
             let currentDate = Date()
-            
-            let lastShowTime = UserDefaults.standard.value(forKey: lastShowTimeKey) as? Date
-            
-            guard let lastTime = lastShowTime else {
-                UserDefaults.standard.set(currentDate, forKey: lastShowTimeKey)
+            guard let lastTime = UserDefaults.standard.value(forKey: quoteCreatedAt) as? Date else {
                 return true
             }
             let lastTimeToCompare = lastTime.zeroSeconds
@@ -96,11 +89,9 @@ class ViewController: UIViewController {
         }
 
 
-    
-    
-    func saveLastShowTime() {
+    func saveQuoteCreationDate() {
         let currentDate = Date()
-        UserDefaults.standard.set(currentDate, forKey: lastShowTimeKey)
+        UserDefaults.standard.set(currentDate, forKey: quoteCreatedAt)
     }
     
     func getLastQuote() -> String? {
@@ -112,7 +103,7 @@ class ViewController: UIViewController {
     func setPhrase() {
         if isTimeChanged() == true {
             let newQuote = generatePhrase()
-            saveLastShowTime()
+            saveQuoteCreationDate()
             quoteLabel.text = newQuote
         }else {
             let lastQuote = getLastQuote()
