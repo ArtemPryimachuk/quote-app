@@ -53,17 +53,14 @@ class ViewController: UIViewController {
     }
     
     func generatePhrase() -> String? { // фраза рандом + масив
-        var usedPhrasesList: [String] = []
-
         guard phrasesList.count > 0 else{
             return nil
         }
+        var usedPhrasesList: [String] = UserDefaults.standard.stringArray(forKey: phrasesListKey) ?? [String]()
         let availiblePhrase = phrasesList.filter {!usedPhrasesList.contains($0)}
         guard !availiblePhrase.isEmpty else {
-            
             return nil
         }
-        
         let randomI = Int.random(in: 0..<availiblePhrase.count)
         let phraseOfDay = availiblePhrase[randomI]
         usedPhrasesList.append(phraseOfDay)
@@ -72,26 +69,25 @@ class ViewController: UIViewController {
         return phraseOfDay
     }
     
-    
-        func isTimeChanged() -> Bool {
-            let currentDate = Date()
-            guard let lastTime = UserDefaults.standard.value(forKey: quoteCreatedAt) as? Date else {
-                return true
-            }
-            let lastTimeToCompare = lastTime.zeroSeconds
-            let currentTimeToCompare = currentDate.zeroSeconds
-                
-            if lastTimeToCompare != currentTimeToCompare {
-                return true
-            }else {
-                return false
-            }
+    func isTimeChanged() -> Bool {
+        let currentDate = Date()
+        guard let lastTime = UserDefaults.standard.value(forKey: quoteCreatedAt) as? Date else {
+            return true
         }
-
-
+        let lastTimeToCompare = lastTime.zeroSeconds
+        let currentTimeToCompare = currentDate.zeroSeconds
+        
+        if lastTimeToCompare != currentTimeToCompare {
+            return true
+        }else {
+            return false
+        }
+    }
+    
     func saveQuoteCreationDate() {
         let currentDate = Date()
         UserDefaults.standard.set(currentDate, forKey: quoteCreatedAt)
+        UserDefaults.standard.synchronize()
     }
     
     func getLastQuote() -> String? {
