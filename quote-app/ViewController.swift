@@ -11,6 +11,9 @@ import Foundation
 class ViewController: UIViewController {
     @IBOutlet weak var quoteLabel: UILabel!
     
+    let phrasesListKey = "usedPhrasesListKey"
+    let quoteCreatedAt = "quoteCreatedAtKey"
+    
     var phrasesList: [String] = ["Stay focused and never give up.",
                                  "Hard work beats talent when talent doesn't work hard.",
                                  "Believe in yourself and all that you are.",
@@ -43,9 +46,7 @@ class ViewController: UIViewController {
                                  "The only way to achieve the impossible is to believe it is possible."
     ]
     
-    let phrasesListKey = "usedPhrasesListKey"
-    let quoteCreatedAt = "quoteCreatedAtKey"
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

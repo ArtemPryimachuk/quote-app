@@ -1,0 +1,18 @@
+[
+    {
+        "quoteId": 1,
+        "text": "someText",
+        "author": "name",
+        "category": "someText",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 2,
+        "text": "secondText",
+        "author": "name2",
+        "category": "someText2",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    }
+]
