@@ -1,0 +1,243 @@
+[
+    {
+        "quoteId": 1,
+        "text": "Stay focused and never give up.",
+        "author": "name1",
+        "category": "someText",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 2,
+        "text": "Hard work beats talent when talent doesn't work hard.",
+        "author": "name2",
+        "category": "someText2",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 3,
+        "text": "Believe in yourself and all that you are.",
+        "author": "name3",
+        "category": "someText3",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 4,
+        "text": "Your only limit is you.",
+        "author": "name4",
+        "category": "someText4",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 5,
+        "text": "Dream big, work hard, stay focused.",
+        "author": "name5",
+        "category": "someText5",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 6,
+        "text": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+        "author": "name6",
+        "category": "someText6",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 7,
+        "text": "The only way to do great work is to love what you do.",
+        "author": "name7",
+        "category": "someText7",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 8,
+        "text": "Don't watch the clock; do what it does. Keep going.",
+        "author": "name8",
+        "category": "someText8",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 9,
+        "text": "Success is stumbling from failure to failure with no loss of enthusiasm.",
+        "author": "name9",
+        "category": "someText9",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 10,
+        "text": "You are never too old to set another goal or to dream a new dream.",
+        "author": "name10",
+        "category": "someText10",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 11,
+        "text": "The only place where success comes before work is in the dictionary.",
+        "author": "name11",
+        "category": "someText11",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 12,
+        "text": "Challenges are what make life interesting and overcoming them is what makes life meaningful.",
+        "author": "name12",
+        "category": "someText12",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 13,
+        "text": "The future belongs to those who believe in the beauty of their dreams.",
+        "author": "name13",
+        "category": "someText13",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 14,
+        "text": "Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.",
+        "author": "name14",
+        "category": "someText14",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 15,
+        "text": "Your time is limited, don't waste it living someone else's life.",
+        "author": "name15",
+        "category": "someText15",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 16,
+        "text": "In the middle of difficulty lies opportunity.",
+        "author": "name16",
+        "category": "someText16",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 17,
+        "text": "The harder the battle, the sweeter the victory.",
+        "author": "name17",
+        "category": "someText17",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 18,
+        "text": "Your attitude determines your direction.",
+        "author": "name18",
+        "category": "someText18",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 19,
+        "text": "Believe you can and you're halfway there.",
+        "author": "name19",
+        "category": "someText19",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 20,
+        "text": "Don't be afraid to give up the good to go for the great.",
+        "author": "name20",
+        "category": "someText20",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 21,
+        "text": "The only thing standing between you and your goal is the story you keep telling yourself as to why you can't achieve it.",
+        "author": "name21",
+        "category": "someText21",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 22,
+        "text": "If you want to achieve greatness stop asking for permission.",
+        "author": "name22",
+        "category": "someText22",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 23,
+        "text": "Do it with passion or not at all.",
+        "author": "name23",
+        "category": "someText23",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 24,
+        "text": "Success is not just about making money. It's about making a difference.",
+        "author": "name24",
+        "category": "someText24",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 25,
+        "text": "Don't stop when you're tired. Stop when you're done.",
+        "author": "name25",
+        "category": "someText25",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 26,
+        "text": "The only person you are destined to become is the person you decide to be.",
+        "author": "name26",
+        "category": "someText26",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 27,
+        "text": "Don't wait for opportunity. Create it.",
+        "author": "name27",
+        "category": "someText27",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 28,
+        "text": "It's not about how bad you want it. It's about how hard you're willing to work for it.",
+        "author": "name28",
+        "category": "someText28",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 29,
+        "text": "The only limit to our realization of tomorrow will be our doubts of today.",
+        "author": "name29",
+        "category": "someText29",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    },
+    {
+        "quoteId": 30,
+        "text": "The only way to achieve the impossible is to believe it is possible.",
+        "author": "name30",
+        "category": "someText30",
+        "createdAt": "2024-03-04T17:06:23+0000",
+        "updatedAt": null
+    }
+    
+]
